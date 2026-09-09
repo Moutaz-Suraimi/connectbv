@@ -19,18 +19,18 @@ export const Navbar: React.FC = () => {
     <>
       <header className="fixed top-4 md:top-6 inset-x-0 z-50 flex justify-center px-4 w-full pointer-events-none">
         {/* Floating Navbar Container */}
-        <div className="relative w-full max-w-[1300px] h-[72px] md:h-[80px] rounded-full bg-[#121E36] shadow-2xl overflow-hidden flex items-center p-2 pointer-events-auto border border-white/5">
+        <div className="relative w-full max-w-[1100px] h-[68px] md:h-[76px] rounded-full bg-[#121E36] shadow-2xl overflow-hidden flex items-center p-2 pointer-events-auto border border-white/5">
 
           {/* Foreground Elements container */}
-          <div className="relative w-full h-full flex items-center justify-between z-10 px-2 lg:px-6">
+          <div className="relative w-full h-full flex items-center justify-between z-10 px-3 lg:px-5">
             
             {/* Logo Section */}
-            <Link to="/" className="flex items-center group">
-              <img src="/logo.png" alt="Connect Bouw & Brandveiligheid" className="h-12 md:h-14 object-contain mr-3 transition-transform duration-300 group-hover:scale-105" />
+            <Link to="/" className="flex items-center group overflow-hidden">
+              <img src="/logo.png" alt="Connect Bouw & Brandveiligheid" className="h-[44px] md:h-[56px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center space-x-1 lg:space-x-4 absolute left-1/2 -translate-x-1/2">
+            <nav className="hidden lg:flex items-center space-x-1 lg:space-x-2 absolute left-1/2 -translate-x-1/2">
               {navItems.map((item) => {
                 const isActive = location.pathname === item.href;
                 return (
@@ -38,7 +38,7 @@ export const Navbar: React.FC = () => {
                     key={item.name}
                     to={item.href}
                     className={cn(
-                      "relative px-5 py-2.5 rounded-full text-[15px] font-medium transition-all duration-300 group",
+                      "relative px-4 py-2 rounded-full text-[14px] lg:text-[15px] font-medium transition-all duration-300 group",
                       isActive 
                         ? "text-white" 
                         : "text-white/80 hover:text-white"
