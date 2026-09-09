@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Leaf, Home, Shield, ArrowRight, ArrowDown } from 'lucide-react';
 
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2560&q=80';
+const HERO_IMAGE = '/hero-bouw.jpg';
 
 export const Hero: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);

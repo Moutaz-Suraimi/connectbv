@@ -6,9 +6,9 @@ import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
 import { ArrowLeft, CheckCircle2, Building2, ShieldCheck, MapPin } from 'lucide-react';
 
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80';
-const TEAM_IMAGE = 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80';
-const OFFICE_IMAGE = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80';
+const HERO_IMAGE = '/hero-bouw.jpg';
+const TEAM_IMAGE = '/hero-office.jpg';
+const OFFICE_IMAGE = '/hero-office.jpg';
 
 const values = [
   { title: 'Kwaliteit', desc: 'Wij leveren geen compromissen op het gebied van materialen en vakmanschap.' },

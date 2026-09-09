@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { ArrowRight } from 'lucide-react';
 
-const ABOUT_IMAGE = 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80';
+const ABOUT_IMAGE = '/hero-office.jpg';
 
 export const About: React.FC = () => {
   return (
