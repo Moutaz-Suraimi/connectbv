@@ -60,7 +60,11 @@ export const PublicationCard: React.FC<PublicationCardProps> = ({ title, excerpt
         </div>
       )}
       <div className="flex flex-col flex-1 p-8 lg:p-10">
-        {category && <span className="text-accent text-[11px] font-bold tracking-widest uppercase mb-3 block">{category}</span>}
+        <div className="flex items-center gap-2 mb-3">
+          {category && <span className="text-accent text-[11px] font-bold tracking-widest uppercase block">{category}</span>}
+          {category && date && <span className="text-muted/40 text-xs">•</span>}
+          {date && <span className="text-muted text-xs font-medium">{date}</span>}
+        </div>
         <h3 className="text-xl font-semibold text-primary mb-3 leading-tight transition-colors duration-300 group-hover:text-accent">{title}</h3>
         <p className="text-muted leading-relaxed line-clamp-3 mb-8 flex-1 text-sm">{excerpt}</p>
         <div className="flex items-center gap-3 text-primary group-hover:text-accent transition-colors duration-300 mt-auto">
