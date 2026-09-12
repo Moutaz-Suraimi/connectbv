@@ -54,6 +54,9 @@ export const Publications: React.FC = () => {
             <PublicationCard
               title={featured.title}
               excerpt={featured.excerpt}
+              image={featured.image}
+              category={featured.category}
+              date={featured.date}
               featured
             />
           )}
@@ -63,6 +66,9 @@ export const Publications: React.FC = () => {
                 key={pub.id}
                 title={pub.title}
                 excerpt={pub.excerpt}
+                image={pub.image}
+                category={pub.category}
+                date={pub.date}
               />
             ))}
           </div>

@@ -52,16 +52,16 @@ export const Services: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex border border-dark/10 overflow-hidden self-start"
+            className="flex p-1.5 bg-white rounded-full border border-dark/10 shadow-sm self-start"
           >
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-4 text-sm font-medium transition-all duration-300 whitespace-nowrap ${
+                className={`px-7 py-3 text-sm font-medium rounded-full transition-all duration-300 whitespace-nowrap cursor-pointer ${
                   activeTab === tab.id
-                    ? 'bg-primary text-white'
-                    : 'bg-white text-muted hover:text-primary hover:bg-light'
+                    ? 'bg-primary text-white shadow-md'
+                    : 'text-muted hover:text-primary hover:bg-light'
                 }`}
               >
                 {tab.label}
@@ -70,8 +70,8 @@ export const Services: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Service List */}
-        <div>
+        {/* Service Grid - 2 per row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
           {services[activeTab].map((service, i) => (
             <ServiceCard
               key={service.id}

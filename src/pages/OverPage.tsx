@@ -22,8 +22,8 @@ const divisions = [
     icon: Building2,
     tag: 'Bouwafdeling',
     title: 'Bouw & Verduurzaming',
-    desc: 'Gespecialiseerd in zonnepanelen, ventilatie, isolatie, warmtepompen en volledige verduurzaming van uw woning of bedrijfspand. Wij begeleiden u van A tot Z: van advies en calculatie tot installatie.',
-    services: ['Zonnepanelen', 'Ventilatie & Verkoeling', 'Spouw- & Dakisolatie', 'Warmtepompen', 'Verduurzamen'],
+    desc: 'Gespecialiseerd in ventilatie, isolatie, warmtepompen en volledige verduurzaming van uw woning of bedrijfspand. Wij begeleiden u van A tot Z: van advies en calculatie tot installatie.',
+    services: ['Ventilatie & Verkoeling', 'Spouw- & Dakisolatie', 'Warmtepompen', 'Verduurzamen'],
   },
   {
     icon: ShieldCheck,
@@ -77,7 +77,7 @@ export const OverPage: React.FC = () => {
               transition={{ duration: 0.7 }}
             >
               <p className="text-2xl lg:text-3xl font-light text-primary/80 leading-snug mb-8 max-w-xl">
-                Connect Bouw & Brandveiligheid is uw betrouwbare partner voor duurzaam bouwen en brandveiligheid.
+                Connect B.V. is uw betrouwbare partner voor duurzaam bouwen en brandveiligheid.
               </p>
               <p className="text-muted text-lg leading-relaxed mb-6">
                 Wij hebben ons gespecialiseerd in het verduurzamen, renoveren en brandveilig maken van bestaande gebouwen. In Nederland speelt energie-efficiëntie en duurzaamheid een steeds prominentere rol in bouwmethoden en materialen.

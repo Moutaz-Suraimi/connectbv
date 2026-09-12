@@ -4,18 +4,11 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { Button } from '../components/Button';
-import { ArrowLeft, Sun, Wind, Layers, Zap, Leaf, Eye, FlameKindling, Shield } from 'lucide-react';
+import { ArrowLeft, Wind, Layers, Zap, Leaf, Eye, FlameKindling, Shield } from 'lucide-react';
 
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=80';
 
 const bouwDiensten = [
-  {
-    icon: Sun,
-    number: '01',
-    title: 'Zonnepanelen',
-    description: 'Met zonnepanelen kunt u besparen op uw energierekening en laat u de waarde van uw woning of bedrijfsgebouw stijgen. Wij berekenen de juiste constructie op basis van uw projectgegevens en zorgen voor een brandveilige koppeling.',
-    detail: 'Volledig ontzorgd traject: van advies en vergunningsaanvraag tot installatie en nazorg.',
-  },
   {
     icon: Wind,
     number: '02',

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Leaf, Home, Shield, ArrowRight, ArrowDown } from 'lucide-react';
+import { Leaf, Home, Shield, ArrowRight } from 'lucide-react';
 
-const HERO_IMAGE = '/hero-bouw.jpg';
+const HERO_VIDEO = '/HEROVIDEO.mp4';
 
 export const Hero: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,18 +12,21 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="home" ref={ref} className="relative min-h-[850px] h-screen w-full flex items-center overflow-hidden">
-      {/* Parallax Image & Overlay */}
+      {/* Parallax Video & Overlay */}
       <motion.div className="absolute inset-0 z-0" style={{ y: imgY }}>
-        <img
-          src={HERO_IMAGE}
-          alt="Connect BV - Bouw en Brandveiligheid"
-          className="w-full h-full object-cover scale-110"
+        <video
+          src={HERO_VIDEO}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover scale-110 object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/80 to-[#0f172a]/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 via-[#0f172a]/40 to-[#0f172a]/10" />
       </motion.div>
 
       {/* Content */}
-      <motion.div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-20" style={{ opacity }}>
+      <motion.div className="relative z-30 max-w-[1400px] mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-20" style={{ opacity }}>
         
         {/* Left Column: Text & Buttons */}
         <div className="flex flex-col items-start pt-10">
@@ -35,7 +38,7 @@ export const Hero: React.FC = () => {
           >
             <div className="w-8 h-[2px] bg-[#38bdf8]"></div>
             <p className="text-white/60 font-medium tracking-[0.2em] uppercase text-xs">
-              BOUW & BRANDVEILIGHEID
+              CONNECT B.V.
             </p>
           </motion.div>
           
@@ -56,7 +59,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.7 }}
             className="text-white/80 text-base md:text-lg max-w-xl leading-relaxed mb-10"
           >
-            Connect Bouw & Brandveiligheid is een gespecialiseerd bedrijf dat zich richt op het verduurzamen, renoveren en brandveilig maken van bestaande bouwwerken. Met twee sterke afdelingen — <span className="text-white font-medium">Bouw</span> en <span className="text-white font-medium">Brandveiligheid</span> — bieden wij op maat gemaakte oplossingen van hoogwaardige kwaliteit.
+            Connect B.V. is een gespecialiseerd bedrijf dat zich richt op het verduurzamen, renoveren en brandveilig maken van bestaande bouwwerken. Wij bieden op maat gemaakte oplossingen van hoogwaardige kwaliteit.
           </motion.p>
           
           <motion.div
@@ -124,23 +127,20 @@ export const Hero: React.FC = () => {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-12 left-6 lg:left-12 z-10 flex items-center gap-4 text-white/50 cursor-pointer hover:text-white transition-colors group"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-3 text-white/50 cursor-pointer hover:text-white transition-colors group"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
       >
-        <div className="relative flex items-center justify-center border border-white/30 rounded-full w-6 h-10 group-hover:border-white/60 transition-colors">
+        <div className="relative flex items-center justify-center border border-white/30 rounded-full w-[26px] h-[42px] group-hover:border-white/60 transition-colors">
             <motion.div 
-               animate={{ y: [0, 8, 0] }} 
-               transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-               className="w-1 h-2 bg-white/60 rounded-full absolute top-2"
+               animate={{ y: [0, 12, 0] }} 
+               transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+               className="w-1 h-2.5 bg-white/60 group-hover:bg-white rounded-full absolute top-2 transition-colors"
             />
         </div>
-        <span className="text-[11px] tracking-[0.2em] uppercase font-semibold mt-1 flex items-center gap-2">
+        <span className="text-[11px] tracking-[0.2em] uppercase font-medium text-center">
           Scroll naar beneden
-          <motion.div animate={{ y: [0, 5, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
-            <ArrowDown className="w-3 h-3" />
-          </motion.div>
         </span>
       </motion.div>
     </section>

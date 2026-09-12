@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
             
             {/* Logo Section */}
             <Link to="/" className="flex items-center group overflow-hidden">
-              <img src="/logo.png" alt="Connect Bouw & Brandveiligheid" className="h-[44px] md:h-[56px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+              <img src="/logo.png" alt="Connect B.V." className="h-[44px] md:h-[56px] w-auto object-contain transition-transform duration-300 group-hover:scale-105 brightness-0 invert" />
             </Link>
 
             {/* Desktop Nav */}

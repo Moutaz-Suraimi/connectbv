@@ -1,6 +1,5 @@
 export const services = {
   bouw: [
-    { id: 'zonnepanelen', number: '01', title: 'Zonnepanelen', description: 'Met zonnepanelen kunt u besparen op uw energierekening en laat u de waarde van uw woning of bedrijfsgebouw stijgen. Wij berekenen de juiste constructie op basis van uw projectgegevens en zorgen voor een brandveilige koppeling.' },
     { id: 'ventilatie-verkoeling', number: '02', title: 'Ventilatie & Verkoeling', description: 'Goede ventilatie is belangrijk voor de gezondheid. Er kan gebruik worden gemaakt van natuurlijke ventilatie, mechanische afvoer of balansventilatie. Met airconditioning kunt u niet alleen koelen, maar ook energie-efficiënt verwarmen in de winter.' },
     { id: 'spouw-dak-isolatie', number: '03', title: 'Spouw & Dak Isolatie', description: 'Kies voor KOMO-gecertificeerde dakisolatie met de hoogst mogelijke isolatiewaardes en bespaar direct op uw energierekening. U ervaart meer comfort binnen met een maximale energiebesparing en een lange levensduur.' },
     { id: 'warmtepompen', number: '04', title: 'Warmtepompen', description: 'Een volledig elektrische warmtepomp met buitenunit zorgt voor de verwarming van je huis en warm water. Met een volledig elektrische of hybride warmtepomp kan je huis op een energiezuinige manier van het aardgas af.' },

@@ -3,13 +3,15 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { ArrowRight } from 'lucide-react';
+import { ImageFlow } from '../components/ImageFlow';
 
 const ABOUT_IMAGE = '/hero-office.jpg';
 
 export const About: React.FC = () => {
   return (
-    <section id="over" className="py-32 lg:py-48 bg-white">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+    <section id="over" className="pt-2 pb-32 lg:pt-8 lg:pb-48 bg-white relative">
+      <ImageFlow />
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 mt-16 md:mt-24 text-left">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-start">
 
           {/* Left: Typography */}
@@ -35,7 +37,7 @@ export const About: React.FC = () => {
                 Bij het verkennen van mogelijkheden voor een nieuwe woning of renovatie is professioneel advies onschatbaar.
               </p>
               <p className="text-muted text-lg leading-relaxed mb-6 max-w-lg">
-                Connect Bouw & Brandveiligheid heeft zich gespecialiseerd in het verduurzamen, renoveren en brandveilig maken van bestaande gebouwen. In Nederland speelt energie-efficiëntie en het streven naar duurzaamheid een steeds prominentere rol in bouwmethoden en materialen.
+                Connect B.V. heeft zich gespecialiseerd in het verduurzamen, renoveren en brandveilig maken van bestaande gebouwen. In Nederland speelt energie-efficiëntie en het streven naar duurzaamheid een steeds prominentere rol in bouwmethoden en materialen.
               </p>
               <p className="text-muted text-lg leading-relaxed mb-12 max-w-lg">
                 Een goede start begint met goede voorbereiding en nauwkeurige calculatie. Ons toegewijde team begeleidt u stap voor stap door het gehele proces. Ons kantoor is gevestigd in Woerden.
@@ -81,7 +83,7 @@ export const About: React.FC = () => {
           {[
             {
               tag: 'Bouwafdeling',
-              desc: 'Gespicialiseerd in zonnepanelen, ventilatie, isolatie, warmtepompen en volledige verduurzaming van uw woning of bedrijfspand.'
+              desc: 'Gespicialiseerd in ventilatie, isolatie, warmtepompen en volledige verduurzaming van uw woning of bedrijfspand.'
             },
             {
               tag: 'Brandveiligheidsafdeling',

@@ -250,7 +250,7 @@ export const ContactPage: React.FC = () => {
               </div>
               <div className="bg-dark text-white p-8">
                 <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-3">Ons Kantoor</p>
-                <p className="text-white text-xl font-semibold mb-1">Connect Bouw & Brandveiligheid</p>
+                <p className="text-white text-xl font-semibold mb-1">Connect B.V.</p>
                 <p className="text-white/70">Bierbrouwersweg 14 a<br />3449HW Woerden, Nederland</p>
               </div>
             </motion.div>
